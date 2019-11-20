@@ -1,0 +1,14 @@
+{
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    "npm-debug.log.*": true
+  },
+  // Configure glob patterns for excluding files and folders in searches.
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
