@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { findIndex } from "lodash"
+import shortid from "shortid"
 
 import { read, selections } from "./api"
 import { Container, Highlight, Wrapper } from "./Reader.styles"
@@ -43,8 +44,9 @@ const Reader = () => {
     <Wrapper>
       <Container>
         {words.map(word =>
-          word !== " " ? (
+          word ? (
             <Highlight
+              key={shortid.generate()}
               selected={isSelected(word)}
               onClick={handleClick}
               data-translation={isSelected(word) ? isTranslated(word) : ""}
@@ -52,7 +54,7 @@ const Reader = () => {
               {word}
             </Highlight>
           ) : (
-            " "
+            word
           )
         )}
       </Container>
