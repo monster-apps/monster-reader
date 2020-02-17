@@ -21,7 +21,7 @@
     "react-scripts": "3.4.0",
     "shortid": "^2.2.15",
     "styled-components": "^4.4.1",
-    "swr": "^0.1.16",
+    "swr": "^0.1.17",
     "typescript": "~3.7.5"
   },
   "scripts": {
