@@ -22,7 +22,7 @@
     "shortid": "^2.2.15",
     "styled-components": "^4.4.1",
     "swr": "^0.1.17",
-    "typescript": "~3.7.5"
+    "typescript": "~3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
