@@ -16,7 +16,7 @@
     "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.13.1",
     "react-hotkeys-hook": "^1.6.0",
     "react-scripts": "3.4.0",
     "shortid": "^2.2.15",
