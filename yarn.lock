@@ -5971,10 +5971,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
   integrity sha512-kssjab8CvdXfcXMXVcvsXum4Hwdq9XGtRD3TteMEvEbq0LXyiNQr6AprqKqfeaDXze7SxWvRxdpwE6ku7ikLkg==
 
-hotkeys-js@3.7.3:
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.7.3.tgz#f0c718166e844b3e52065d1b60cffaa6065b5183"
-  integrity sha512-CSaeVPAKEEYNexYR35znMJnCqoofk7oqG/AOOqWow1qDT0Yxy+g+Y8Hs/LhGlsZaSJ7973YN6/N41LAr3t30QQ==
+hotkeys-js@3.7.6:
+  version "3.7.6"
+  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.7.6.tgz#b90ae3453a7be2f2b2bed6ee55cb96443944c77b"
+  integrity sha512-X5d16trjp79o+OaCn7syXu0cs+TkLYlK/teE5FhpD1Cj9ROcEIhfIQ7Mhrk761ynF3NQLbLn5xRojP2UuSqDAw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -9966,12 +9966,12 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-hotkeys-hook@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-1.6.0.tgz#6a901c6f1fa500fa59da1dccff37ba7b758516f0"
-  integrity sha512-chhNNKGkVcIjNMPaxoi0WzWUi0MyHj5smm7qp+TLqhaNsxn3DD6ajg2Ih7gRiiq78Qt4INynl65OoS7gG4/6qQ==
+react-hotkeys-hook@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-1.6.1.tgz#85899cdbf99b064a2b45949f5cd902e69a887a97"
+  integrity sha512-aXuMkJ9a/Bqflaun1CFUh2/+zAUq/24DOuUYnK07bnA7BaG1lyfCXtqo3eLyn8h42sjrwo+h6JCUIniay4HOgA==
   dependencies:
-    hotkeys-js "3.7.3"
+    hotkeys-js "3.7.6"
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0:
   version "16.12.0"
