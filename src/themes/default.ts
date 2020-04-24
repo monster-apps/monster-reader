@@ -1,17 +1,22 @@
 export const colors = {
-  primary: "#001f4b",
-  primaryLight: "#0A4692",
-  secondary: "#00B32F",
-  secondaryLight: "#01E03B",
-  base: "#191D21",
-  warning: "#ff0069",
-  greyLight: "#EDEDED"
+  primary: "#191D21",
+  primaryLight: "#1E2227",
+  primaryDark: "#0A0B0D",
+  secondary: "#C6C6C6",
+  secondaryDark: "#8A8A8A",
+  secondaryDarker: "#4F4F4F",
+  tertiary: "#FF2D49"
 }
 
 export const breakpoints = {
   desktop: 960,
   tablet: 660,
   mobile: 360
+}
+
+export const fontFamily = {
+  primary: "Georgia",
+  secondary: "Helvetica"
 }
 
 export const fontSizes = {
@@ -42,6 +47,7 @@ export const device = {
 export const defaultTheme = {
   colors,
   breakpoints,
+  fontFamily,
   fontSizes,
   spaces,
   transitions,
