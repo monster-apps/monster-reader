@@ -1,9 +1,9 @@
-const colors = {
+export const colors = {
   primary: "#001f4b",
   primaryLight: "#0A4692",
   secondary: "#00B32F",
   secondaryLight: "#01E03B",
-  base: "#ffffff",
+  base: "#191D21",
   warning: "#ff0069",
   greyLight: "#EDEDED"
 }
@@ -14,7 +14,7 @@ export const breakpoints = {
   mobile: 360
 }
 
-const fontSizes = {
+export const fontSizes = {
   xs: "0.75rem", // 12px
   sm: "0.875rem", // 14px
   md: "1.5rem", // 24px
@@ -22,7 +22,7 @@ const fontSizes = {
   xl: "2.75rem" // 44px
 }
 
-const spaces = {
+export const spaces = {
   xs: "0.3rem", // 4.8px
   sm: "0.75rem", // 12px
   md: "1rem", // 16px
@@ -30,7 +30,7 @@ const spaces = {
   xl: "3rem" // 48px
 }
 
-const transitions = {
+export const transitions = {
   regular: "all 0.3s ease"
 }
 
@@ -39,20 +39,11 @@ export const device = {
   tablet: `(max-width: ${breakpoints.desktop}px)`
 }
 
-export interface Theme {
-  breakpoints: { [key in keyof typeof breakpoints]: number }
-  fontSizes: { [key in keyof typeof fontSizes]: string }
-  spaces: { [key in keyof typeof spaces]: string }
-  colors: { [key in keyof typeof colors]: string }
-  transitions: { [key in keyof typeof transitions]: string }
-}
-
-const theme: Theme = {
+export const defaultTheme = {
+  colors,
   breakpoints,
   fontSizes,
   spaces,
-  colors,
-  transitions
+  transitions,
+  device
 }
-
-export { theme }
