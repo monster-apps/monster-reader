@@ -17,6 +17,18 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
     -moz-osx-font-smoothing: grayscale;
     color:  ${p => p.theme.colors.secondary}
   }
+
+  @font-face{
+    font-family: "icon";
+    font-display: auto;
+    src: url(${p => p.theme.fontFamily.icons});
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  *:focus {
+    outline: none;
+  }
 `
 
 export { GlobalStyle }

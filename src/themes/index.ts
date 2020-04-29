@@ -4,6 +4,7 @@ import { defaultTheme } from "./default"
 
 export interface Theme {
   breakpoints: { [key in keyof typeof defaultTheme.breakpoints]: number }
+  borderRadius: { [key in keyof typeof defaultTheme.borderRadius]: string }
   fontSizes: { [key in keyof typeof defaultTheme.fontSizes]: string }
   fontFamily: { [key in keyof typeof defaultTheme.fontFamily]: string }
   spaces: { [key in keyof typeof defaultTheme.spaces]: string }

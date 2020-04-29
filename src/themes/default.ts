@@ -1,11 +1,11 @@
+import defaultIcons from "../assets/default-icons.woff2"
+
 export const colors = {
   primary: "#191D21",
   primaryLight: "#1E2227",
-  primaryDark: "#0A0B0D",
   secondary: "#C6C6C6",
-  secondaryDark: "#8A8A8A",
-  secondaryDarker: "#4F4F4F",
-  tertiary: "#FF2D49"
+  tertiary: "#FF1534",
+  quaternary: "#FFFFFF"
 }
 
 export const breakpoints = {
@@ -16,7 +16,8 @@ export const breakpoints = {
 
 export const fontFamily = {
   primary: "Georgia",
-  secondary: "Helvetica"
+  secondary: "Helvetica",
+  icons: defaultIcons
 }
 
 export const fontSizes = {
@@ -44,8 +45,13 @@ export const device = {
   tablet: `(max-width: ${breakpoints.desktop}px)`
 }
 
+export const borderRadius = {
+  md: "0.3rem" // 4.8px
+}
+
 export const defaultTheme = {
   colors,
+  borderRadius,
   breakpoints,
   fontFamily,
   fontSizes,

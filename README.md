@@ -1,44 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Monter Reader
 
-## Available Scripts
+This is the monsterreader.io a tool to help reading translations thta uses React as a framework.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Initial Setup](#🚀-initial-setup)
+- [Available Scripts](#📃-available-scripts)
+- [Icons](#🧐-update-the-icon-fonts)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Initial Setup
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1.  **Install**
 
-### `yarn test`
+    ```sh
+    npm i
+    ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.  **Start developing.**
 
-### `yarn build`
+    ```sh
+    npm run develop
+    ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📃 Available Scripts
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In the project directory, you can run the following scripts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Command         | Description                                                            |
+| :-------------- | :--------------------------------------------------------------------- |
+| `start`         | Starts the development server and the planner app                      |
+| `build`         | Create a production build                                              |
+| `test`          | Run tests                                                              |
+| `test:coverage` | Run tests coverage                                                     |
+| `cy:dev`        | Run E2E opening select test screen                                     |
+| `cy:ci`         | Run all E2E tests without interface                                    |
+| `cz`            | Create standardized commits                                            |
+| `codegen:watch` | Generate graphql hooks/types by reading .qgl file inside /src/services |
 
-### `yarn eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🧐 Update the icon fonts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The font set was created using [Fontello](http://fontello.com/) website, if you need to include any icon you can upload [this file](./src/assets/defaultTheme.svg) and customize it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The font-face it's included [here](./src/global.styles.ts).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Update the new downloaded file inside `./src/assets/fontello.{.svg, .woff2}`
+2. Include your custom icon content code inside the [Icon component style](./src/components/Icon/Icon.styles.tsx)
+   ```css
+   &.icon-arrow-right:before {
+     content: "\u2192";
+   }
+   ```
+3. Include the new icon name inside the [interface](./src/components/Icon/Icon.tsx)
