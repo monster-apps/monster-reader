@@ -36,7 +36,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/shortid": "^0.0.29",
-    "@types/styled-components": "^5.1.0",
+    "@types/styled-components": "^5.1.1",
     "git-cz": "^4.7.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
